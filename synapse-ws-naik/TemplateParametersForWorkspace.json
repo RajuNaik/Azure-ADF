@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synapse-ws-naik"
+		},
+		"ls_adls_accountKey": {
+			"value": ""
+		},
+		"ls_sqldb_connectionString": {
+			"value": ""
+		},
+		"ls_synapse_ddsql_connectionString": {
+			"value": ""
+		},
+		"synapse-ws-naik-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"ls_AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://my-keyvailt.vault.azure.net/"
+		},
+		"ls_adls_properties_typeProperties_url": {
+			"value": "https://adlsstorage98naik.dfs.core.windows.net/"
+		},
+		"synapse-ws-naik-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://adlsstorage98naik.dfs.core.windows.net"
+		}
+	}
+}
