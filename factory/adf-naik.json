@@ -1,0 +1,9 @@
+{
+	"name": "adf-naik",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "003570bb-d9a1-4f52-808c-7e8cf15a8777",
+		"tenantId": "9cdd2b60-c056-4f47-9aea-2df5db713f8b"
+	}
+}
