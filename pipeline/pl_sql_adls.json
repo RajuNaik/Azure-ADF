@@ -1,6 +1,45 @@
 {
 	"name": "pl_sql_adls",
 	"properties": {
+		"activities": [
+			{
+				"name": "dataflow",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "dataflow",
+						"type": "DataFlowReference",
+						"datasetParameters": {
+							"source1": {
+								"ds_param_tablename": {
+									"value": "@pipeline().parameters.pl_param_tablename",
+									"type": "Expression"
+								}
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Coarse"
+				}
+			}
+		],
+		"parameters": {
+			"pl_param_tablename": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
